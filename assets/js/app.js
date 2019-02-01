@@ -5,7 +5,7 @@ var div = d3.select('#scatter').append("div")
     .style("opacity", 0);
 
 
-d3.csv('/data/data.csv').then(function (d) {
+d3.csv('assets/data/data.csv').then(function (d) {
     console.log(d3.values(d))
     console.log(
         d3.max([0, d3.max(d, function (d) {
